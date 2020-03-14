@@ -1,0 +1,20 @@
+<p>
+  <h1>Welcome to my <b><em>cookbook</em></b>!</h1>
+  <br>
+</p>
+
+<p>
+  All My Recipes
+</p>
+
+<ol>
+  <% @recipes.each do |recipe| %>
+    <li>
+      <%= recipe.name %>
+    </li>
+  <% end %>
+</ol>
+
+<p>
+  <a href="/new">create</a>
+</p>
